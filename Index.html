@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>✩Mi Página Personal✩</title>
+<link rel="stylesheet" href="styles.css">
+         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+         <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+         <link rel="icon" href="favicon.ico">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1><span class="dorado">✩</span>Mi <span class="dorado">Página</span> Personal<span class="dorado">✩</span></h1>
+<nav>
+  <a href="#sobre-mi" class="dorado">Sobre mí</a>
+  <a href="#intereses">Intereses</a>
+  <a href="#avances" class="dorado">Mis Avances</a>
+  <a href="#contacto">Contáctenme</a>
+  <a href="practica-js.html" class="dorado">Laboratorio JS</a>
+  <a href="lista/lista.html" >Lista de Tareas</a>
+</nav>
+      
+      <button type="button" id="btn-tema" class="btn-tema">🌙 Modo oscuro</button>
+      <p class="badge-jas"></p>
+    
+    </header>
+
+    <main>
+      <h2 id="sobre-mi">Sobre mí</h2>
+
+      <p id="saludo" class="saludo"></p>
+      <div class="sobre-mi-grid">
+
+        <p>Soy <strong class="destacado">NATALIA</strong> y estoy aprendiendo <em>desarrollo web</em>.</p>
+        <img src="imagenes/p.avif" alt="Foto de perfil" width="200">
+
+        <h2 id="intereses">Mis intereses <span id="contador-favoritos" class="contador"></span></h2>
+         <ul>
+          <li>✧LEYES✧</li>
+          <li>✧DERECHO✧</li>
+          <li>✧LECTURA✧</li>
+          <li>✧PENAL✧</li>
+         <li>✧MERCANTIL✧</li>
+        </ul>
+
+        <h2 id="avances">Mis avances</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Lenguaje</th>
+              <th>Nivel</th>
+              <th>Meses de práctica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Básico</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Principiante</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Sin empezar</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="contacto">Contáctenme</h2>
+      <form novalidate>
+        <p>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre">
+        </p>
+        <p>
+          <label for="correo">Correo:</label><br>
+         <input type="email" id="correo" name="correo">
+        </p>
+<p>
+  <label for="mensaje">Mensaje:</label><br>
+  <textarea id="mensaje" name="mensaje"></textarea>
+  <span id="contador-mensaje" class="contador-mensaje">0 caracteres</span>
+</p>
+
+        <p>
+          <label for="nivel">Nivel de interés:</label><br>
+          <select id="nivel" name="nivel">
+            <option value ="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+          </select>
+        </p>
+        <p>
+          <button type="submit">Enviar</button>
+          <button type="reset">Borrar</button>
+        </p>
+      </form>
+      <p id="mensaje-error" class="mensaje-form"></p>
+    </main>
+
+    <footer>
+            <div class="en-linea">
+        <p class="en-linea-estado"><span class="punto-vivo"></span> En línea</p>
+        <p class="en-linea-texto">Esta página está publicada en Netlify y se actualiza sola con cada <code>git push</code>.</p>
+        <p class="en-linea-enlaces">
+          <a href="https://creative-tulumba-c84a15.netlify.app">Mi página</a>
+          <a href="https://creative-tulumba-c84a15.netlify.app/lista/lista.html">Mi lista de tareas</a>
+        </p>
+      </div>
+      <p>Contáctame en <a href="mailto:natnorato@ejemplo.com">natnorato@ejemplo.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
